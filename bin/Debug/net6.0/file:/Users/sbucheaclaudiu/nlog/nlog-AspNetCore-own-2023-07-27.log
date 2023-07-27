@@ -1,0 +1,13 @@
+2023-07-27 13:31:37.9360|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-27 13:31:37.9445|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-27 13:31:37.9445|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-27 13:31:37.9445|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-27 13:31:37.9445|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-27 13:31:47.9334|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '0' was not found! |url: https://localhost/api/Event/GetById|action: GetById
+2023-07-27 13:38:46.6864|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-27 13:38:48.8841|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-27 13:38:48.8909|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-27 13:38:48.8909|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-27 13:38:48.8917|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-27 13:38:48.8917|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-27 13:45:21.5258|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 

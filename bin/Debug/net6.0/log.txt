@@ -1,0 +1,866 @@
+2023-07-27 11:46:10.6712|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-07-27 11:46:10.7019|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-07-27 11:46:10.7069|FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception|System.InvalidOperationException: An error occurred when configuring the exception handler middleware. Either the 'ExceptionHandlingPath' or the 'ExceptionHandler' property must be set in 'UseExceptionHandler()'. Alternatively, set one of the aforementioned properties in 'Startup.ConfigureServices' as follows: 'services.AddExceptionHandler(options => { ... });'.
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware..ctor(RequestDelegate next, ILoggerFactory loggerFactory, IOptions`1 options, DiagnosticListener diagnosticListener)
+   at Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.<>c__DisplayClass4_0.<SetExceptionHandlerMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__27_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2023-07-27 11:47:29.7991|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-07-27 11:47:29.8301|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-07-27 11:47:29.9346|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 12626B865D2965935C78A461D7B7027CFFAD37F6)
+2023-07-27 11:47:29.9439|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014
+2023-07-27 11:47:29.9439|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065
+2023-07-27 11:47:29.9439|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly WebApplication1
+2023-07-27 11:47:29.9439|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-07-27 11:47:29.9439|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-07-27 11:47:29.9439|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/
+2023-07-27 11:47:29.9439|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-07-27 11:47:30.1259|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFOEASCQT" received FIN.
+2023-07-27 11:47:30.1288|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQT" accepted.
+2023-07-27 11:47:30.1288|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQT" started.
+2023-07-27 11:47:30.1340|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-07-27 11:47:30.1391|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQT" stopped.
+2023-07-27 11:47:30.1402|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFOEASCQT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 11:47:30.3242|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQU" accepted.
+2023-07-27 11:47:30.3242|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQU" started.
+2023-07-27 11:47:30.3639|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSEFOEASCQU established using the following protocol: Tls12
+2023-07-27 11:47:30.6022|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/index.html - -
+2023-07-27 11:47:30.6022|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-07-27 11:47:30.6022|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 11:47:30.6132|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-07-27 11:47:30.6132|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 11:47:30.7370|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQU" completed keep alive response.
+2023-07-27 11:47:30.7382|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/index.html - - - 200 - text/html;charset=utf-8 136.9270ms
+2023-07-27 11:47:30.8765|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - -
+2023-07-27 11:47:30.8765|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 11:47:30.8765|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-07-27 11:47:30.8765|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 11:47:30.9420|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQU" completed keep alive response.
+2023-07-27 11:47:30.9420|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 65.6300ms
+2023-07-27 11:47:47.5002|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/api/Event/GetById - -
+2023-07-27 11:47:47.5013|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 11:47:47.5271|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Event/GetById'
+2023-07-27 11:47:47.5310|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)' with route pattern 'api/Event/GetById' is valid for the request path '/api/Event/GetById'
+2023-07-27 11:47:47.5310|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:47:47.5336|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 11:47:47.5370|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:47:47.5705|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetById", controller = "Event"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.EventDTO]] GetById(Int32) on controller WebApplication1.Controllers.EventController (WebApplication1).
+2023-07-27 11:47:47.5705|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 11:47:47.5705|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 11:47:47.5705|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 11:47:47.5705|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 11:47:47.5705|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 11:47:47.5710|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.EventController (WebApplication1)
+2023-07-27 11:47:47.7146|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.EventController (WebApplication1)
+2023-07-27 11:47:47.7159|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-07-27 11:47:47.7163|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name '' in request data ...
+2023-07-27 11:47:47.7163|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name '' for binding parameter 'id' of type 'System.Int32'.
+2023-07-27 11:47:47.7163|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 11:47:47.7163|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 11:47:47.7163|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-07-27 11:47:47.7163|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-07-27 11:47:47.7180|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:47:47.7180|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:47:47.7180|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:47:47.7180|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:47:47.7200|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.EventController.GetById (WebApplication1) - Validation state: Valid
+2023-07-27 11:47:47.7200|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.EventController.GetById (WebApplication1) with arguments (0)
+2023-07-27 11:47:49.0336|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:47:49.0336|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:47:49.0342|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:47:49.0342|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:47:49.0382|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.EventController.GetById (WebApplication1) in 1464.4727ms
+2023-07-27 11:47:49.0382|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:47:49.0432|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '0' was not found!
+2023-07-27 11:47:49.0457|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQU" completed keep alive response.
+2023-07-27 11:47:49.0457|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/api/Event/GetById - - - 404 0 application/json 1545.7948ms
+2023-07-27 11:48:01.9370|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/api/Event/GetById?id=89 - -
+2023-07-27 11:48:01.9383|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 11:48:01.9431|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Event/GetById'
+2023-07-27 11:48:01.9431|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)' with route pattern 'api/Event/GetById' is valid for the request path '/api/Event/GetById'
+2023-07-27 11:48:01.9431|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:48:01.9442|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 11:48:01.9442|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:48:01.9459|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetById", controller = "Event"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.EventDTO]] GetById(Int32) on controller WebApplication1.Controllers.EventController (WebApplication1).
+2023-07-27 11:48:01.9459|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 11:48:01.9459|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 11:48:01.9462|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 11:48:01.9462|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 11:48:01.9462|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 11:48:01.9462|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.EventController (WebApplication1)
+2023-07-27 11:48:01.9527|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.EventController (WebApplication1)
+2023-07-27 11:48:01.9593|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-07-27 11:48:01.9607|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-07-27 11:48:01.9617|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 11:48:01.9617|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 11:48:01.9617|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-07-27 11:48:01.9617|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-07-27 11:48:01.9617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:48:01.9617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:48:01.9617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:48:01.9617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:48:01.9617|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.EventController.GetById (WebApplication1) - Validation state: Valid
+2023-07-27 11:48:01.9617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.EventController.GetById (WebApplication1) with arguments (89)
+2023-07-27 11:48:01.9978|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:48:01.9978|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:48:01.9978|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:48:01.9978|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:48:01.9978|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.EventController.GetById (WebApplication1) in 51.7815ms
+2023-07-27 11:48:01.9982|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:48:01.9993|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '89' was not found!
+2023-07-27 11:48:01.9993|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQU" completed keep alive response.
+2023-07-27 11:48:01.9993|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/api/Event/GetById?id=89 - - - 404 0 application/json 62.8970ms
+2023-07-27 11:48:32.3595|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQU" disconnecting.
+2023-07-27 11:48:32.3629|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFOEASCQU" stopped.
+2023-07-27 11:48:32.3638|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFOEASCQU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 11:51:12.0985|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-27 11:51:12.1089|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2023-07-27 11:51:12.1276|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2023-07-27 11:58:52.4694|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-07-27 11:58:52.4992|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-07-27 11:58:52.5841|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 12626B865D2965935C78A461D7B7027CFFAD37F6)
+2023-07-27 11:58:52.5919|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014
+2023-07-27 11:58:52.5919|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065
+2023-07-27 11:58:52.5919|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly WebApplication1
+2023-07-27 11:58:52.5919|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-07-27 11:58:52.5919|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-07-27 11:58:52.5919|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/
+2023-07-27 11:58:52.5919|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-07-27 11:58:52.8579|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFUPPTK05" received FIN.
+2023-07-27 11:58:52.8647|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK05" accepted.
+2023-07-27 11:58:52.8651|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK05" started.
+2023-07-27 11:58:52.8743|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-07-27 11:58:52.8873|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK05" stopped.
+2023-07-27 11:58:52.8909|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFUPPTK05" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 11:58:53.0562|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK06" accepted.
+2023-07-27 11:58:53.0562|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK06" started.
+2023-07-27 11:58:53.0956|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK07" accepted.
+2023-07-27 11:58:53.0956|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK07" started.
+2023-07-27 11:58:53.0968|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSEFUPPTK06 established using the following protocol: Tls12
+2023-07-27 11:58:53.1126|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSEFUPPTK07 established using the following protocol: Tls12
+2023-07-27 11:58:53.1150|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/index.html - -
+2023-07-27 11:58:53.1166|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-07-27 11:58:53.1166|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 11:58:53.1306|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-07-27 11:58:53.1306|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 11:58:53.2843|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK06" completed keep alive response.
+2023-07-27 11:58:53.2855|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/index.html - - - 200 - text/html;charset=utf-8 172.6706ms
+2023-07-27 11:58:53.4506|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - -
+2023-07-27 11:58:53.4506|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 11:58:53.4506|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-07-27 11:58:53.4506|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 11:58:53.5197|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK06" completed keep alive response.
+2023-07-27 11:58:53.5197|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.2400ms
+2023-07-27 11:59:09.0104|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/api/Event/GetById - -
+2023-07-27 11:59:09.0120|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 11:59:09.0231|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Event/GetById'
+2023-07-27 11:59:09.0273|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)' with route pattern 'api/Event/GetById' is valid for the request path '/api/Event/GetById'
+2023-07-27 11:59:09.0280|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:59:09.0423|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 11:59:09.0446|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:59:09.0752|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetById", controller = "Event"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.EventDTO]] GetById(Int32) on controller WebApplication1.Controllers.EventController (WebApplication1).
+2023-07-27 11:59:09.0752|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 11:59:09.0752|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 11:59:09.0752|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 11:59:09.0752|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 11:59:09.0752|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 11:59:09.0752|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.EventController (WebApplication1)
+2023-07-27 11:59:09.2212|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.EventController (WebApplication1)
+2023-07-27 11:59:09.2223|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-07-27 11:59:09.2223|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name '' in request data ...
+2023-07-27 11:59:09.2223|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name '' for binding parameter 'id' of type 'System.Int32'.
+2023-07-27 11:59:09.2229|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 11:59:09.2229|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 11:59:09.2229|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-07-27 11:59:09.2229|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-07-27 11:59:09.2242|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:59:09.2242|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:59:09.2242|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:59:09.2242|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:59:09.2262|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.EventController.GetById (WebApplication1) - Validation state: Valid
+2023-07-27 11:59:09.2262|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.EventController.GetById (WebApplication1) with arguments (0)
+2023-07-27 11:59:10.4439|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:59:10.4439|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:59:10.4439|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:59:10.4439|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:59:10.4484|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.EventController.GetById (WebApplication1) in 1369.961ms
+2023-07-27 11:59:10.4491|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:59:10.4558|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '0' was not found!
+2023-07-27 11:59:10.5563|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK06" completed keep alive response.
+2023-07-27 11:59:10.5563|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/api/Event/GetById - - - 404 - application/json 1546.3626ms
+2023-07-27 11:59:17.7495|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/api/Event/GetById?id=123 - -
+2023-07-27 11:59:17.7501|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 11:59:17.7551|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Event/GetById'
+2023-07-27 11:59:17.7551|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)' with route pattern 'api/Event/GetById' is valid for the request path '/api/Event/GetById'
+2023-07-27 11:59:17.7551|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:59:17.7551|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 11:59:17.7563|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:59:17.7573|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetById", controller = "Event"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.EventDTO]] GetById(Int32) on controller WebApplication1.Controllers.EventController (WebApplication1).
+2023-07-27 11:59:17.7573|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 11:59:17.7573|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 11:59:17.7573|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 11:59:17.7573|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 11:59:17.7573|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 11:59:17.7580|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.EventController (WebApplication1)
+2023-07-27 11:59:17.7722|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.EventController (WebApplication1)
+2023-07-27 11:59:17.7794|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-07-27 11:59:17.7807|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-07-27 11:59:17.7816|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 11:59:17.7816|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 11:59:17.7816|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-07-27 11:59:17.7816|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-07-27 11:59:17.7819|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:59:17.7819|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:59:17.7819|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:59:17.7819|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:59:17.7819|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.EventController.GetById (WebApplication1) - Validation state: Valid
+2023-07-27 11:59:17.7819|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.EventController.GetById (WebApplication1) with arguments (123)
+2023-07-27 11:59:17.8136|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:59:17.8136|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 11:59:17.8136|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:59:17.8136|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 11:59:17.8136|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.EventController.GetById (WebApplication1) in 55.9159ms
+2023-07-27 11:59:17.8140|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 11:59:17.8140|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '123' was not found!
+2023-07-27 11:59:17.8151|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK06" completed keep alive response.
+2023-07-27 11:59:17.8151|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/api/Event/GetById?id=123 - - - 404 - application/json 65.7675ms
+2023-07-27 11:59:24.0162|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK07" disconnecting.
+2023-07-27 11:59:24.0177|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFUPPTK07" received FIN.
+2023-07-27 11:59:24.0188|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFUPPTK07" sending FIN because: "The client closed the connection."
+2023-07-27 11:59:24.0219|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK07" stopped.
+2023-07-27 11:59:55.0208|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK06" disconnecting.
+2023-07-27 11:59:55.0229|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFUPPTK06" stopped.
+2023-07-27 11:59:55.0233|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFUPPTK06" received FIN.
+2023-07-27 11:59:55.0233|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFUPPTK06" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 12:00:01.2200|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-27 12:00:01.2227|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2023-07-27 12:00:01.2351|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2023-07-27 12:00:03.3625|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-07-27 12:00:03.3933|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-07-27 12:00:03.4559|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 12626B865D2965935C78A461D7B7027CFFAD37F6)
+2023-07-27 12:00:03.4628|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014
+2023-07-27 12:00:03.4628|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065
+2023-07-27 12:00:03.4628|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly WebApplication1
+2023-07-27 12:00:03.4630|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-07-27 12:00:03.4630|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-07-27 12:00:03.4630|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/
+2023-07-27 12:00:03.4630|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-07-27 12:00:03.7226|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFVETNQQB" received FIN.
+2023-07-27 12:00:03.7255|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQB" accepted.
+2023-07-27 12:00:03.7255|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQB" started.
+2023-07-27 12:00:03.7308|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-07-27 12:00:03.7355|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQB" stopped.
+2023-07-27 12:00:03.7367|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFVETNQQB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 12:00:03.9142|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQC" accepted.
+2023-07-27 12:00:03.9142|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQC" started.
+2023-07-27 12:00:03.9495|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSEFVETNQQC established using the following protocol: Tls12
+2023-07-27 12:00:04.0128|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/index.html - -
+2023-07-27 12:00:04.0132|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-07-27 12:00:04.0132|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:00:04.0249|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-07-27 12:00:04.0249|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 12:00:04.1825|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQC" completed keep alive response.
+2023-07-27 12:00:04.1858|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/index.html - - - 200 - text/html;charset=utf-8 173.5621ms
+2023-07-27 12:00:04.4140|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - -
+2023-07-27 12:00:04.4140|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:00:04.4140|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-07-27 12:00:04.4140|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 12:00:04.4807|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQC" completed keep alive response.
+2023-07-27 12:00:04.4807|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 66.7921ms
+2023-07-27 12:00:09.3689|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/api/Event/GetById - -
+2023-07-27 12:00:09.3693|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:00:09.3783|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Event/GetById'
+2023-07-27 12:00:09.3840|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)' with route pattern 'api/Event/GetById' is valid for the request path '/api/Event/GetById'
+2023-07-27 12:00:09.3840|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 12:00:09.3859|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 12:00:09.3890|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 12:00:09.4238|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetById", controller = "Event"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.EventDTO]] GetById(Int32) on controller WebApplication1.Controllers.EventController (WebApplication1).
+2023-07-27 12:00:09.4240|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 12:00:09.4240|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 12:00:09.4240|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 12:00:09.4240|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 12:00:09.4240|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 12:00:09.4240|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.EventController (WebApplication1)
+2023-07-27 12:00:09.5747|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.EventController (WebApplication1)
+2023-07-27 12:00:09.5759|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-07-27 12:00:09.5763|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name '' in request data ...
+2023-07-27 12:00:09.5763|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name '' for binding parameter 'id' of type 'System.Int32'.
+2023-07-27 12:00:09.5763|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 12:00:09.5763|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 12:00:09.5763|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-07-27 12:00:09.5763|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-07-27 12:00:09.5777|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:00:09.5777|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:00:09.5777|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:00:09.5777|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:00:09.5795|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.EventController.GetById (WebApplication1) - Validation state: Valid
+2023-07-27 12:00:09.5795|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.EventController.GetById (WebApplication1) with arguments (0)
+2023-07-27 12:00:10.6990|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:00:10.6990|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:00:10.6990|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:00:10.6990|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:00:10.7036|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.EventController.GetById (WebApplication1) in 1276.6457ms
+2023-07-27 12:00:10.7043|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.EventController.GetById (WebApplication1)'
+2023-07-27 12:00:10.7083|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '0' was not found!
+2023-07-27 12:00:10.8066|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQC" completed keep alive response.
+2023-07-27 12:00:10.8066|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/api/Event/GetById - - - 404 - application/json 1437.8799ms
+2023-07-27 12:00:16.0437|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/api/Order/GetById - -
+2023-07-27 12:00:16.0443|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:00:16.0463|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Order/GetById'
+2023-07-27 12:00:16.0463|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.OrderController.GetById (WebApplication1)' with route pattern 'api/Order/GetById' is valid for the request path '/api/Order/GetById'
+2023-07-27 12:00:16.0463|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.OrderController.GetById (WebApplication1)'
+2023-07-27 12:00:16.0472|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 12:00:16.0472|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.OrderController.GetById (WebApplication1)'
+2023-07-27 12:00:16.0637|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetById", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.OrderDTO]] GetById(Int32) on controller WebApplication1.Controllers.OrderController (WebApplication1).
+2023-07-27 12:00:16.0637|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 12:00:16.0637|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 12:00:16.0637|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 12:00:16.0637|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 12:00:16.0637|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 12:00:16.0637|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 12:00:16.0673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 12:00:16.0673|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-07-27 12:00:16.0673|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name '' in request data ...
+2023-07-27 12:00:16.0673|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name '' for binding parameter 'id' of type 'System.Int32'.
+2023-07-27 12:00:16.0673|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 12:00:16.0673|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 12:00:16.0673|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-07-27 12:00:16.0673|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-07-27 12:00:16.0673|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:00:16.0673|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:00:16.0673|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:00:16.0673|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:00:16.0673|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.GetById (WebApplication1) - Validation state: Valid
+2023-07-27 12:00:16.0673|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.GetById (WebApplication1) with arguments (0)
+2023-07-27 12:00:16.1893|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WebApplication1.Controllers.OrderController.GetById (WebApplication1), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 119.4606ms.
+2023-07-27 12:00:16.1893|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:00:16.1893|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:00:16.1893|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:00:16.1893|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:00:16.1893|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 12:00:16.1893|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 12:00:16.1901|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-07-27 12:00:16.1901|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-07-27 12:00:16.1931|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/plain'.
+2023-07-27 12:00:16.1931|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter' and content type 'text/plain' to write the response.
+2023-07-27 12:00:16.1931|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'null'.
+2023-07-27 12:00:16.1931|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-07-27 12:00:16.1931|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 12:00:16.1931|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 12:00:16.1931|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.OrderController.GetById (WebApplication1) in 129.4339ms
+2023-07-27 12:00:16.1931|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.OrderController.GetById (WebApplication1)'
+2023-07-27 12:00:16.1931|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQC" completed keep alive response.
+2023-07-27 12:00:16.1931|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/api/Order/GetById - - - 204 0 - 149.9325ms
+2023-07-27 12:01:05.9118|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQC" disconnecting.
+2023-07-27 12:01:05.9153|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFVETNQQC" received FIN.
+2023-07-27 12:01:05.9168|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEFVETNQQC" stopped.
+2023-07-27 12:01:05.9171|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEFVETNQQC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 12:44:38.2091|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-27 12:44:38.2179|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2023-07-27 12:44:38.2409|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2023-07-27 12:44:41.8633|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-07-27 12:44:41.8962|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-07-27 12:44:41.9761|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 12626B865D2965935C78A461D7B7027CFFAD37F6)
+2023-07-27 12:44:41.9839|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014
+2023-07-27 12:44:41.9839|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065
+2023-07-27 12:44:41.9839|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly WebApplication1
+2023-07-27 12:44:41.9839|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-07-27 12:44:41.9847|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-07-27 12:44:41.9847|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/
+2023-07-27 12:44:41.9847|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-07-27 12:44:42.2607|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEGOD68O8P" received FIN.
+2023-07-27 12:44:42.2666|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGOD68O8P" accepted.
+2023-07-27 12:44:42.2666|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGOD68O8P" started.
+2023-07-27 12:44:42.2753|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-07-27 12:44:42.2825|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGOD68O8P" stopped.
+2023-07-27 12:44:42.2841|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEGOD68O8P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 12:44:42.7275|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGOD68O8Q" accepted.
+2023-07-27 12:44:42.7275|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGOD68O8Q" started.
+2023-07-27 12:44:42.7919|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSEGOD68O8Q established using the following protocol: Tls12
+2023-07-27 12:44:43.3888|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/index.html - -
+2023-07-27 12:44:43.3888|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-07-27 12:44:43.3894|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:44:43.4070|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-07-27 12:44:43.4070|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 12:44:43.5293|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGOD68O8Q" completed keep alive response.
+2023-07-27 12:44:43.5303|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/index.html - - - 200 - text/html;charset=utf-8 142.3751ms
+2023-07-27 12:44:43.7661|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - -
+2023-07-27 12:44:43.7661|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:44:43.7661|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-07-27 12:44:43.7661|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 12:44:43.8262|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGOD68O8Q" completed keep alive response.
+2023-07-27 12:44:43.8262|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 60.1867ms
+2023-07-27 12:45:06.6074|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/api/Order/GetById?id=232 - -
+2023-07-27 12:45:06.6079|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:45:06.6133|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Order/GetById'
+2023-07-27 12:45:06.6173|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.OrderController.GetById (WebApplication1)' with route pattern 'api/Order/GetById' is valid for the request path '/api/Order/GetById'
+2023-07-27 12:45:06.6177|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.OrderController.GetById (WebApplication1)'
+2023-07-27 12:45:06.6193|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 12:45:06.6229|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.OrderController.GetById (WebApplication1)'
+2023-07-27 12:45:06.6570|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetById", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.OrderDTO]] GetById(Int32) on controller WebApplication1.Controllers.OrderController (WebApplication1).
+2023-07-27 12:45:06.6570|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 12:45:06.6570|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 12:45:06.6570|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 12:45:06.6570|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 12:45:06.6570|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 12:45:06.6575|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 12:45:06.8047|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 12:45:06.8080|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-07-27 12:45:06.8087|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-07-27 12:45:06.8087|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 12:45:06.8087|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-07-27 12:45:06.8087|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-07-27 12:45:06.8087|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-07-27 12:45:06.8104|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:45:06.8104|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:45:06.8104|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:45:06.8104|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:45:06.8122|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.GetById (WebApplication1) - Validation state: Valid
+2023-07-27 12:45:06.8122|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.GetById (WebApplication1) with arguments (232)
+2023-07-27 12:45:08.0969|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:45:08.0969|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:45:08.0976|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:45:08.0976|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:45:08.1021|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.OrderController.GetById (WebApplication1) in 1441.5059ms
+2023-07-27 12:45:08.1029|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.OrderController.GetById (WebApplication1)'
+2023-07-27 12:45:08.1092|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '232' was not found!
+2023-07-27 12:45:08.2118|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGOD68O8Q" completed keep alive response.
+2023-07-27 12:45:08.2118|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/api/Order/GetById?id=232 - - - 404 - application/json 1604.5866ms
+2023-07-27 12:45:44.7905|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGOD68O8Q" disconnecting.
+2023-07-27 12:45:44.7926|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGOD68O8Q" stopped.
+2023-07-27 12:45:44.7928|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEGOD68O8Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 12:55:26.4346|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-27 12:55:26.4414|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2023-07-27 12:55:26.5360|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2023-07-27 12:55:32.5963|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-07-27 12:55:32.6257|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-07-27 12:55:32.7200|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 12626B865D2965935C78A461D7B7027CFFAD37F6)
+2023-07-27 12:55:32.7286|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014
+2023-07-27 12:55:32.7286|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065
+2023-07-27 12:55:32.7286|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly WebApplication1
+2023-07-27 12:55:32.7289|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-07-27 12:55:32.7289|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-07-27 12:55:32.7289|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/
+2023-07-27 12:55:32.7289|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-07-27 12:55:32.9263|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEGUF3G5Q1" received FIN.
+2023-07-27 12:55:32.9307|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGUF3G5Q1" accepted.
+2023-07-27 12:55:32.9307|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGUF3G5Q1" started.
+2023-07-27 12:55:32.9379|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-07-27 12:55:32.9460|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGUF3G5Q1" stopped.
+2023-07-27 12:55:32.9482|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEGUF3G5Q1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 12:55:33.2532|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGUF3G5Q2" accepted.
+2023-07-27 12:55:33.2532|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGUF3G5Q2" started.
+2023-07-27 12:55:33.3341|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSEGUF3G5Q2 established using the following protocol: Tls12
+2023-07-27 12:55:34.2595|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/index.html - -
+2023-07-27 12:55:34.2601|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-07-27 12:55:34.2601|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:55:34.2751|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-07-27 12:55:34.2751|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 12:55:34.4179|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGUF3G5Q2" completed keep alive response.
+2023-07-27 12:55:34.4189|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/index.html - - - 200 - text/html;charset=utf-8 160.6354ms
+2023-07-27 12:55:34.5707|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - -
+2023-07-27 12:55:34.5707|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:55:34.5707|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-07-27 12:55:34.5707|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 12:55:34.6388|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGUF3G5Q2" completed keep alive response.
+2023-07-27 12:55:34.6388|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 68.1373ms
+2023-07-27 12:55:46.5501|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 71
+2023-07-27 12:55:46.5501|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:55:46.5740|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Order/Patch'
+2023-07-27 12:55:46.5769|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)' with route pattern 'api/Order/Patch' is valid for the request path '/api/Order/Patch'
+2023-07-27 12:55:46.5769|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 12:55:46.5783|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 12:55:46.5804|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 12:55:46.6186|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Patch", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.OrderDTO]] Patch(WebApplication1.Models.DTO.OrderPatchDTO) on controller WebApplication1.Controllers.OrderController (WebApplication1).
+2023-07-27 12:55:46.6188|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 12:55:46.6188|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 12:55:46.6188|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 12:55:46.6188|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 12:55:46.6188|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 12:55:46.6188|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 12:55:46.7689|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 12:55:46.7702|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 12:55:46.7708|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' using the name '' in request data ...
+2023-07-27 12:55:46.7708|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-07-27 12:55:46.7781|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEGUF3G5Q2", Request id "0HMSEGUF3G5Q2:00000004": started reading request body.
+2023-07-27 12:55:46.7781|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEGUF3G5Q2", Request id "0HMSEGUF3G5Q2:00000004": done reading request body.
+2023-07-27 12:55:46.7912|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'WebApplication1.Models.DTO.OrderPatchDTO'
+2023-07-27 12:55:46.7912|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 12:55:46.7912|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 12:55:46.7912|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 12:55:46.7944|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 12:55:46.7955|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:55:46.7955|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:55:46.7955|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:55:46.7955|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:55:46.7973|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.Patch (WebApplication1) - Validation state: Valid
+2023-07-27 12:55:46.7973|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.Patch (WebApplication1) with arguments (WebApplication1.Models.DTO.OrderPatchDTO)
+2023-07-27 12:55:48.0830|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:55:48.0830|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:55:48.0830|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:55:48.0830|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:55:48.0875|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.OrderController.Patch (WebApplication1) in 1465.7542ms
+2023-07-27 12:55:48.0882|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 12:55:48.0946|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '123' was not found!
+2023-07-27 12:55:48.1946|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGUF3G5Q2" completed keep alive response.
+2023-07-27 12:55:48.1946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 71 - 404 - application/json 1644.6215ms
+2023-07-27 12:56:27.0893|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-27 12:56:27.0929|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2023-07-27 12:56:27.1128|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGUF3G5Q2" disconnecting.
+2023-07-27 12:56:27.1163|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGUF3G5Q2" stopped.
+2023-07-27 12:56:27.1173|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEGUF3G5Q2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 12:56:27.1290|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2023-07-27 12:56:29.3776|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-07-27 12:56:29.4162|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-07-27 12:56:29.4893|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 12626B865D2965935C78A461D7B7027CFFAD37F6)
+2023-07-27 12:56:29.5012|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014
+2023-07-27 12:56:29.5012|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065
+2023-07-27 12:56:29.5012|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly WebApplication1
+2023-07-27 12:56:29.5012|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-07-27 12:56:29.5021|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-07-27 12:56:29.5021|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/
+2023-07-27 12:56:29.5021|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-07-27 12:56:29.6128|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEGV003H3R" received FIN.
+2023-07-27 12:56:29.6157|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3R" accepted.
+2023-07-27 12:56:29.6157|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3R" started.
+2023-07-27 12:56:29.6211|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-07-27 12:56:29.6257|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3R" stopped.
+2023-07-27 12:56:29.6294|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEGV003H3R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 12:56:29.8399|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3S" accepted.
+2023-07-27 12:56:29.8401|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3S" started.
+2023-07-27 12:56:29.8811|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSEGV003H3S established using the following protocol: Tls12
+2023-07-27 12:56:29.9546|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/index.html - -
+2023-07-27 12:56:29.9546|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-07-27 12:56:29.9546|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:56:29.9661|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-07-27 12:56:29.9662|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 12:56:30.1357|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3S" completed keep alive response.
+2023-07-27 12:56:30.1383|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/index.html - - - 200 - text/html;charset=utf-8 184.5217ms
+2023-07-27 12:56:30.2979|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - -
+2023-07-27 12:56:30.2979|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:56:30.2983|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-07-27 12:56:30.2983|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 12:56:30.3922|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3S" completed keep alive response.
+2023-07-27 12:56:30.3922|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.4137ms
+2023-07-27 12:56:53.4703|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 43
+2023-07-27 12:56:53.4703|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:56:53.4774|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Order/Patch'
+2023-07-27 12:56:53.4815|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)' with route pattern 'api/Order/Patch' is valid for the request path '/api/Order/Patch'
+2023-07-27 12:56:53.4815|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 12:56:53.4834|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 12:56:53.4857|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 12:56:53.5201|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Patch", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.OrderDTO]] Patch(WebApplication1.Models.DTO.OrderPatchDTO) on controller WebApplication1.Controllers.OrderController (WebApplication1).
+2023-07-27 12:56:53.5203|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 12:56:53.5203|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 12:56:53.5203|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 12:56:53.5203|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 12:56:53.5203|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 12:56:53.5203|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 12:56:53.6638|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 12:56:53.6650|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 12:56:53.6657|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' using the name '' in request data ...
+2023-07-27 12:56:53.6657|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-07-27 12:56:53.6723|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEGV003H3S", Request id "0HMSEGV003H3S:00000004": started reading request body.
+2023-07-27 12:56:53.6723|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEGV003H3S", Request id "0HMSEGV003H3S:00000004": done reading request body.
+2023-07-27 12:56:53.6896|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter threw an exception: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 3 | BytePositionInLine: 0.
+2023-07-27 12:56:53.6896|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 12:56:53.6896|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 12:56:53.6896|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 12:56:53.6924|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 12:56:53.6934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:56:53.6934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:56:53.6934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:56:53.6934|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2023-07-27 12:56:53.6934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:56:53.6934|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-07-27 12:56:53.6934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:56:53.6934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:56:53.6934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 12:56:53.6934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 12:56:53.6945|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-07-27 12:56:53.6945|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-07-27 12:56:53.6965|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/plain' and explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-07-27 12:56:53.6965|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2023-07-27 12:56:53.6965|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+2023-07-27 12:56:53.6965|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-07-27 12:56:53.6965|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-07-27 12:56:53.7054|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-07-27 12:56:53.7054|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 12:56:53.7054|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 12:56:53.7073|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.OrderController.Patch (WebApplication1) in 184.9332ms
+2023-07-27 12:56:53.7073|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 12:56:53.7073|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3S" completed keep alive response.
+2023-07-27 12:56:53.7073|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 43 - 400 - application/problem+json;+charset=utf-8 237.5142ms
+2023-07-27 12:57:06.7643|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 42
+2023-07-27 12:57:06.7643|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 12:57:06.7719|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Order/Patch'
+2023-07-27 12:57:06.7719|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)' with route pattern 'api/Order/Patch' is valid for the request path '/api/Order/Patch'
+2023-07-27 12:57:06.7724|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 12:57:06.7724|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 12:57:06.7724|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 12:57:06.7724|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Patch", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.OrderDTO]] Patch(WebApplication1.Models.DTO.OrderPatchDTO) on controller WebApplication1.Controllers.OrderController (WebApplication1).
+2023-07-27 12:57:06.7724|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 12:57:06.7724|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 12:57:06.7734|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 12:57:06.7734|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 12:57:06.7734|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 12:57:06.7734|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 12:57:06.7734|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 12:57:06.7734|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 12:57:06.7753|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' using the name '' in request data ...
+2023-07-27 12:57:06.7754|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-07-27 12:57:06.7754|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEGV003H3S", Request id "0HMSEGV003H3S:00000005": started reading request body.
+2023-07-27 12:57:06.7754|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEGV003H3S", Request id "0HMSEGV003H3S:00000005": done reading request body.
+2023-07-27 12:57:06.7812|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'WebApplication1.Models.DTO.OrderPatchDTO'
+2023-07-27 12:57:06.7815|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 12:57:06.7815|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 12:57:06.7815|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 12:57:06.7896|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 12:57:06.7896|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:57:06.7896|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:57:06.7896|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:57:06.7896|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:57:06.7944|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.Patch (WebApplication1) - Validation state: Valid
+2023-07-27 12:57:06.7944|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.Patch (WebApplication1) with arguments (WebApplication1.Models.DTO.OrderPatchDTO)
+2023-07-27 12:57:08.1261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:57:08.1261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 12:57:08.1267|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:57:08.1267|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 12:57:08.1279|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.OrderController.Patch (WebApplication1) in 1354.3305ms
+2023-07-27 12:57:08.1285|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 12:57:08.1347|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with description 'VIP' was not found!
+2023-07-27 12:57:08.2328|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3S" completed keep alive response.
+2023-07-27 12:57:08.2328|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 42 - 404 - application/json 1468.5926ms
+2023-07-27 12:58:08.1266|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEGV003H3S" received FIN.
+2023-07-27 12:58:08.1294|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3S" disconnecting.
+2023-07-27 12:58:08.1304|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEGV003H3S" sending FIN because: "The client closed the connection."
+2023-07-27 12:58:08.1350|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEGV003H3S" stopped.
+2023-07-27 13:03:26.0432|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-27 13:03:26.0462|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2023-07-27 13:03:26.0568|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2023-07-27 13:03:28.0480|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-07-27 13:03:28.0770|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-07-27 13:03:28.1651|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 12626B865D2965935C78A461D7B7027CFFAD37F6)
+2023-07-27 13:03:28.1727|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014
+2023-07-27 13:03:28.1727|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065
+2023-07-27 13:03:28.1727|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly WebApplication1
+2023-07-27 13:03:28.1730|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-07-27 13:03:28.1730|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-07-27 13:03:28.1730|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/
+2023-07-27 13:03:28.1730|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-07-27 13:03:28.4622|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEH2SQI6J5" received FIN.
+2023-07-27 13:03:28.4696|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J5" accepted.
+2023-07-27 13:03:28.4700|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J5" started.
+2023-07-27 13:03:28.4799|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-07-27 13:03:28.4864|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J5" stopped.
+2023-07-27 13:03:28.4880|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEH2SQI6J5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 13:03:28.6931|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J6" accepted.
+2023-07-27 13:03:28.6931|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J6" started.
+2023-07-27 13:03:28.7302|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSEH2SQI6J6 established using the following protocol: Tls12
+2023-07-27 13:03:28.7475|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/index.html - -
+2023-07-27 13:03:28.7480|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-07-27 13:03:28.7480|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 13:03:28.7580|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-07-27 13:03:28.7580|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 13:03:28.7959|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J7" accepted.
+2023-07-27 13:03:28.7972|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J7" started.
+2023-07-27 13:03:28.8230|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSEH2SQI6J7 established using the following protocol: Tls12
+2023-07-27 13:03:28.8999|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J6" completed keep alive response.
+2023-07-27 13:03:28.9018|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/index.html - - - 200 - text/html;charset=utf-8 155.0003ms
+2023-07-27 13:03:29.0649|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - -
+2023-07-27 13:03:29.0649|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 13:03:29.0649|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-07-27 13:03:29.0649|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-07-27 13:03:29.1284|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J6" completed keep alive response.
+2023-07-27 13:03:29.1284|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7014/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 63.5955ms
+2023-07-27 13:03:53.3397|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 71
+2023-07-27 13:03:53.3409|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 13:03:53.3517|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Order/Patch'
+2023-07-27 13:03:53.3558|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)' with route pattern 'api/Order/Patch' is valid for the request path '/api/Order/Patch'
+2023-07-27 13:03:53.3564|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 13:03:53.3583|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 13:03:53.3619|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 13:03:53.3988|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Patch", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.OrderDTO]] Patch(WebApplication1.Models.DTO.OrderPatchDTO) on controller WebApplication1.Controllers.OrderController (WebApplication1).
+2023-07-27 13:03:53.3988|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 13:03:53.3988|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 13:03:53.3992|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 13:03:53.3992|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 13:03:53.3992|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 13:03:53.3992|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 13:03:53.5413|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 13:03:53.5426|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 13:03:53.5433|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' using the name '' in request data ...
+2023-07-27 13:03:53.5433|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-07-27 13:03:53.5504|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEH2SQI6J6", Request id "0HMSEH2SQI6J6:00000004": started reading request body.
+2023-07-27 13:03:53.5504|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEH2SQI6J6", Request id "0HMSEH2SQI6J6:00000004": done reading request body.
+2023-07-27 13:03:53.5639|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'WebApplication1.Models.DTO.OrderPatchDTO'
+2023-07-27 13:03:53.5639|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 13:03:53.5639|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 13:03:53.5639|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 13:03:53.5674|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 13:03:53.5683|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:03:53.5683|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:03:53.5683|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:03:53.5683|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:03:53.5701|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.Patch (WebApplication1) - Validation state: Valid
+2023-07-27 13:03:53.5701|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.Patch (WebApplication1) with arguments (WebApplication1.Models.DTO.OrderPatchDTO)
+2023-07-27 13:03:55.0768|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WebApplication1.Controllers.OrderController.Patch (WebApplication1), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1504.8263ms.
+2023-07-27 13:03:55.0773|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:03:55.0773|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:03:55.0773|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:03:55.0773|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:03:55.0782|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 13:03:55.0782|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 13:03:55.0782|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-07-27 13:03:55.0792|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-07-27 13:03:55.0818|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/plain'.
+2023-07-27 13:03:55.0818|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2023-07-27 13:03:55.0818|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-07-27 13:03:55.0818|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-07-27 13:03:55.0818|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-07-27 13:03:55.0818|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'WebApplication1.Models.DTO.OrderDTO'.
+2023-07-27 13:03:55.0980|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-07-27 13:03:55.0980|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 13:03:55.0980|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 13:03:55.1008|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.OrderController.Patch (WebApplication1) in 1699.3522ms
+2023-07-27 13:03:55.1014|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 13:03:55.1038|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J6" completed keep alive response.
+2023-07-27 13:03:55.1038|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 71 - 200 - application/json;+charset=utf-8 1764.8643ms
+2023-07-27 13:03:59.6376|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J7" disconnecting.
+2023-07-27 13:03:59.6399|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J7" stopped.
+2023-07-27 13:03:59.6402|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEH2SQI6J7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 13:04:04.0087|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 71
+2023-07-27 13:04:04.0093|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 13:04:04.0111|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Order/Patch'
+2023-07-27 13:04:04.0113|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)' with route pattern 'api/Order/Patch' is valid for the request path '/api/Order/Patch'
+2023-07-27 13:04:04.0113|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 13:04:04.0113|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 13:04:04.0128|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 13:04:04.0139|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Patch", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.OrderDTO]] Patch(WebApplication1.Models.DTO.OrderPatchDTO) on controller WebApplication1.Controllers.OrderController (WebApplication1).
+2023-07-27 13:04:04.0139|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 13:04:04.0139|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 13:04:04.0143|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 13:04:04.0143|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 13:04:04.0143|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 13:04:04.0143|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 13:04:04.0143|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 13:04:04.0158|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 13:04:04.0158|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' using the name '' in request data ...
+2023-07-27 13:04:04.0158|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-07-27 13:04:04.0166|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEH2SQI6J6", Request id "0HMSEH2SQI6J6:00000005": started reading request body.
+2023-07-27 13:04:04.0166|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEH2SQI6J6", Request id "0HMSEH2SQI6J6:00000005": done reading request body.
+2023-07-27 13:04:04.0166|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'WebApplication1.Models.DTO.OrderPatchDTO'
+2023-07-27 13:04:04.0166|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 13:04:04.0166|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 13:04:04.0166|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 13:04:04.0175|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 13:04:04.0175|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:04:04.0175|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:04:04.0175|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:04:04.0175|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:04:04.0175|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.Patch (WebApplication1) - Validation state: Valid
+2023-07-27 13:04:04.0175|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.Patch (WebApplication1) with arguments (WebApplication1.Models.DTO.OrderPatchDTO)
+2023-07-27 13:04:04.0892|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WebApplication1.Controllers.OrderController.Patch (WebApplication1), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 71.4008ms.
+2023-07-27 13:04:04.0892|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:04:04.0892|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:04:04.0892|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:04:04.0892|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:04:04.0892|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 13:04:04.0892|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 13:04:04.0892|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-07-27 13:04:04.0892|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-07-27 13:04:04.0892|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/plain'.
+2023-07-27 13:04:04.0892|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2023-07-27 13:04:04.0892|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-07-27 13:04:04.0892|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-07-27 13:04:04.0892|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-07-27 13:04:04.0892|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'WebApplication1.Models.DTO.OrderDTO'.
+2023-07-27 13:04:04.0892|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-07-27 13:04:04.0892|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 13:04:04.0892|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-07-27 13:04:04.0892|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.OrderController.Patch (WebApplication1) in 75.5918ms
+2023-07-27 13:04:04.0892|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 13:04:04.0892|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J6" completed keep alive response.
+2023-07-27 13:04:04.0892|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 71 - 200 - application/json;+charset=utf-8 81.5668ms
+2023-07-27 13:04:10.4277|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 47
+2023-07-27 13:04:10.4277|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-07-27 13:04:10.4283|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Order/Patch'
+2023-07-27 13:04:10.4283|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)' with route pattern 'api/Order/Patch' is valid for the request path '/api/Order/Patch'
+2023-07-27 13:04:10.4283|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 13:04:10.4283|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-07-27 13:04:10.4283|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 13:04:10.4283|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Patch", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WebApplication1.Models.DTO.OrderDTO]] Patch(WebApplication1.Models.DTO.OrderPatchDTO) on controller WebApplication1.Controllers.OrderController (WebApplication1).
+2023-07-27 13:04:10.4283|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-07-27 13:04:10.4283|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-07-27 13:04:10.4283|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-07-27 13:04:10.4283|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-07-27 13:04:10.4283|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-07-27 13:04:10.4292|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 13:04:10.4309|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApplication1.Controllers.OrderController (WebApplication1)
+2023-07-27 13:04:10.4309|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 13:04:10.4313|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' using the name '' in request data ...
+2023-07-27 13:04:10.4313|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-07-27 13:04:10.4313|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEH2SQI6J6", Request id "0HMSEH2SQI6J6:00000006": started reading request body.
+2023-07-27 13:04:10.4313|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMSEH2SQI6J6", Request id "0HMSEH2SQI6J6:00000006": done reading request body.
+2023-07-27 13:04:10.4313|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'WebApplication1.Models.DTO.OrderPatchDTO'
+2023-07-27 13:04:10.4313|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 13:04:10.4313|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 13:04:10.4313|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO' ...
+2023-07-27 13:04:10.4313|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'orderPatch' of type 'WebApplication1.Models.DTO.OrderPatchDTO'.
+2023-07-27 13:04:10.4313|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:04:10.4313|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:04:10.4313|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:04:10.4313|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:04:10.4313|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.Patch (WebApplication1) - Validation state: Valid
+2023-07-27 13:04:10.4313|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebApplication1.Controllers.OrderController.Patch (WebApplication1) with arguments (WebApplication1.Models.DTO.OrderPatchDTO)
+2023-07-27 13:04:10.4596|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:04:10.4596|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-07-27 13:04:10.4596|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:04:10.4596|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-07-27 13:04:10.4596|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApplication1.Controllers.OrderController.Patch (WebApplication1) in 30.7938ms
+2023-07-27 13:04:10.4596|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebApplication1.Controllers.OrderController.Patch (WebApplication1)'
+2023-07-27 13:04:10.4743|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Error mapping types.
+
+Mapping types:
+Order -> OrderDTO
+WebApplication1.Models.Order -> WebApplication1.Models.DTO.OrderDTO
+
+Type Map configuration:
+Order -> OrderDTO
+WebApplication1.Models.Order -> WebApplication1.Models.DTO.OrderDTO
+
+Destination Member:
+NumberOfTickets
+
+2023-07-27 13:04:10.5764|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J6" completed keep alive response.
+2023-07-27 13:04:10.5764|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH https://localhost:7014/api/Order/Patch application/json 47 - 500 - application/json 148.7642ms
+2023-07-27 13:05:01.5395|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J6" disconnecting.
+2023-07-27 13:05:01.5409|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEH2SQI6J6" received FIN.
+2023-07-27 13:05:01.5420|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSEH2SQI6J6" stopped.
+2023-07-27 13:05:01.5420|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSEH2SQI6J6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-27 13:06:50.3160|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-27 13:06:50.3194|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2023-07-27 13:06:50.3299|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped

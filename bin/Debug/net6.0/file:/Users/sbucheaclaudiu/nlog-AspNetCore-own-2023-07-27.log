@@ -1,0 +1,6 @@
+2023-07-27 13:27:43.6439|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-27 13:27:43.6501|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-27 13:27:43.6501|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-27 13:27:43.6501|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-27 13:27:43.6501|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-27 13:31:34.6201|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
