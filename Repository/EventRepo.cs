@@ -23,7 +23,6 @@ public class EventRepo : IEventRepo
 
     public async Task<Event> GetByID(int id)
     {
-        Console.WriteLine(id);
         var @event = await _dbContext.Events.Where(e => e.EventId == id).Include(e => e.Venue).Include(e => e.EventType).FirstOrDefaultAsync();
 
         if (@event == null)
