@@ -39,9 +39,8 @@ public class OrderController : ControllerBase
     [HttpPatch]
     public async Task<ActionResult<OrderDTO>> Patch(OrderPatchDTO orderPatch)
     {
-        Console.WriteLine("patch");
         OrderDTO modifiedOrder = await _orderService.Update(orderPatch);
-        Console.WriteLine("patchOK");
+       
         return Ok(modifiedOrder);
     }
     

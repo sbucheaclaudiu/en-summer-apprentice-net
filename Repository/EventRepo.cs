@@ -28,7 +28,6 @@ public class EventRepo : IEventRepo
 
         if (@event == null)
         {
-            Console.WriteLine("null");
             throw new EntityNotFoundException(id, nameof(Event));
         }
         
