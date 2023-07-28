@@ -1,0 +1,160 @@
+2023-07-28 09:37:22.2102|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 09:37:26.8647|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 09:37:26.8722|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 09:37:26.8722|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 09:37:26.8730|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 09:37:26.8730|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 09:38:40.8418|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 09:38:43.1248|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 09:38:43.1308|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 09:38:43.1309|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 09:38:43.1320|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 09:38:43.1320|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 09:39:02.6061|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '334232' was not found! |url: https://localhost/api/Event/GetById|action: GetById
+2023-07-28 09:39:40.0859|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 09:41:39.6448|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 09:43:35.3727|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 09:43:54.1684|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 09:45:06.3485|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 09:45:59.9911|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 09:45:59.9979|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 09:45:59.9979|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 09:45:59.9987|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 09:45:59.9987|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:02:54.6926|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:02:58.2431|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:02:58.2489|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:02:58.2491|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:02:58.2491|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:02:58.2491|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:03:19.4603|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '122' was not found! |url: https://localhost/api/Order/GetById|action: GetById
+2023-07-28 10:07:05.7000|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '213232' was not found! |url: https://localhost/api/Order/Delete|action: Delete
+2023-07-28 10:13:50.8802|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:13:54.2486|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:13:54.2545|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:13:54.2545|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:13:54.2545|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:13:54.2545|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:14:48.1001|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:23:28.4319|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '143' was not found! |url: https://localhost/api/Event/GetById|action: GetById
+2023-07-28 10:27:21.0808|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:27:47.4052|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:27:47.4111|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:27:47.4111|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:27:47.4118|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:27:47.4118|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:28:42.8539|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:29:06.0346|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:29:10.2423|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:30:50.5636|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:30:52.7467|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:30:52.7528|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:30:52.7528|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:30:52.7528|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:30:52.7528|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:31:09.6294|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:33:17.2304|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '23' was not found! |url: https://localhost/api/Event/GetById|action: GetById
+2023-07-28 10:33:21.1838|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:33:23.3990|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:33:23.4051|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:33:23.4052|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:33:23.4052|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:33:23.4052|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:33:38.9213|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:35:42.2119|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:35:44.3151|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:35:44.3210|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:35:44.3210|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:35:44.3218|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:35:44.3218|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:35:56.0581|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:37:02.1355|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:37:04.2378|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:37:04.2436|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:37:04.2436|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:37:04.2436|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:37:04.2436|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:37:18.6489|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:37:52.1043|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:37:54.1451|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:37:54.1514|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:37:54.1514|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:37:54.1514|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:37:54.1514|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:38:25.1302|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:46:28.4204|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:46:30.7013|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:46:30.7069|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:46:30.7069|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:46:30.7077|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:46:30.7077|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:46:50.9535|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:48:27.6824|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:48:29.8063|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:48:29.8119|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:48:29.8119|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:48:29.8126|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:48:29.8126|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:48:45.8147|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:54:41.9702|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 10:55:02.5911|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 10:55:02.5976|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 10:55:02.5977|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 10:55:02.5977|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 10:55:02.5986|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 10:55:10.0612|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '89' was not found! |url: https://localhost/api/Event/GetById|action: GetById
+2023-07-28 10:55:20.7869|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 10:58:51.3425|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 11:00:56.6055|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 11:00:56.6114|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 11:00:56.6114|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 11:00:56.6114|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 11:00:56.6114|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 11:01:01.7436|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 11:03:31.8733|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 11:03:31.8800|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 11:03:31.8800|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 11:03:31.8808|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 11:03:31.8808|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 11:03:45.5937|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 11:06:09.8648|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 11:06:12.1203|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 11:06:12.1263|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 11:06:12.1263|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 11:06:12.1263|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 11:06:12.1263|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 11:06:24.9398|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 11:06:30.1744|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 11:23:46.4711|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 11:23:46.4780|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 11:23:46.4780|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 11:23:46.4788|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 11:23:46.4788|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 11:23:54.7200|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '2121' was not found! |url: https://localhost/api/Event/GetById|action: GetById
+2023-07-28 11:24:04.5356|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|Serialization and deserialization of 'System.Action' instances is not supported. Path: $.MoveNextAction. |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 11:25:10.7304|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 11:25:13.8545|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 11:25:13.8604|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 11:25:13.8604|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 11:25:13.8604|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 11:25:13.8604|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 11:25:23.8782|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '32' was not found! |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 11:26:16.9915|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 11:26:19.2952|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 11:26:19.3011|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 11:26:19.3013|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 11:26:19.3013|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 11:26:19.3013|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 11:26:30.1333|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '3232' was not found! |url: https://localhost/api/Event/Patch|action: Patch
+2023-07-28 11:26:51.1740|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: 
+2023-07-28 11:26:53.1746|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7014 |url: |action: 
+2023-07-28 11:26:53.1806|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5065 |url: |action: 
+2023-07-28 11:26:53.1806|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-07-28 11:26:53.1813|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-07-28 11:26:53.1813|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/sbucheaclaudiu/RiderProjects/SystemTicket/WebApplication1/ |url: |action: 
+2023-07-28 11:27:00.6291|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '2121' was not found! |url: https://localhost/api/Event/Delete|action: Delete
+2023-07-28 11:27:09.3642|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '21' was not found! |url: https://localhost/api/Order/Patch|action: Patch
+2023-07-28 11:27:16.3935|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '2121' was not found! |url: https://localhost/api/Order/Delete|action: Delete
+2023-07-28 11:27:17.3066|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '2121' was not found! |url: https://localhost/api/Order/Delete|action: Delete
+2023-07-28 11:27:18.7304|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '2121' was not found! |url: https://localhost/api/Order/Delete|action: Delete
+2023-07-28 11:27:22.5242|0|ERROR|WebApplication1.Middleware.ExceptionHandlerMiddleware|'Event' with id '2121' was not found! |url: https://localhost/api/Order/Delete|action: Delete
