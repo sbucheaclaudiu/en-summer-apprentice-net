@@ -43,7 +43,7 @@ public class EventController : ControllerBase
     [HttpPatch]
     public async Task<ActionResult<EventDTO>> Patch(EventPatchDTO eventPatch)
     {
-        var modifiedEvent = _eventService.Update(eventPatch);
+        var modifiedEvent = await _eventService.Update(eventPatch);
         
         return Ok(modifiedEvent);
     }
@@ -51,7 +51,7 @@ public class EventController : ControllerBase
     [HttpDelete]
     public async Task<ActionResult> Delete(int id)
     {
-        _eventService.Delete(id);
+        await _eventService.Delete(id);
         
         return Ok();
     }
