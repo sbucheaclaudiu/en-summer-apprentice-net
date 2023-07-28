@@ -6,6 +6,7 @@ using NLog.Targets;
 using WebApplication1.Models;
 using WebApplication1.Models.DTO;
 using WebApplication1.Repository;
+using WebApplication1.Services.Interface;
 
 namespace WebApplication1.Controllers;
 
@@ -13,66 +14,45 @@ namespace WebApplication1.Controllers;
 [ApiController]
 public class EventController : ControllerBase
 {
-    private readonly IEventRepo _eventRepo;
-    private readonly IMapper _mapper;
+    private readonly EventService _eventService;
     private readonly ILogger<EventController> _logger;
 
-    public EventController(IEventRepo eventRepo, IMapper mapper, ILogger<EventController> logger)
+    public EventController(EventService eventService, ILogger<EventController> logger)
     {
-        _eventRepo = eventRepo;
-        _mapper = mapper;
+        _eventService = eventService;
         _logger = logger;
     }
 
     [HttpGet]
     public async Task<ActionResult<List<EventDTO>>> GetAll()
     {
-        var events =  await _eventRepo.GetAll();
+        var events =  await _eventService.GetAll();
         
-        var eventDTO = _mapper.Map<List<EventDTO>>(events);
-        
-        return Ok(eventDTO);
+        return Ok(events);
     }
 
     [HttpGet]
     public async Task<ActionResult<EventDTO>> GetById(int id)
     {
 
-        var @event = await _eventRepo.GetByID(id);
+        var @event = await _eventService.GetById(id);
         
-        return Ok(_mapper.Map<EventDTO>(@event));
+        return Ok(@event);
     }
 
     [HttpPatch]
     public async Task<ActionResult<EventDTO>> Patch(EventPatchDTO eventPatch)
     {
-        var eventEntity = await _eventRepo.GetByID(eventPatch.EventID);
+        var modifiedEvent = _eventService.Update(eventPatch);
         
-        if (@eventEntity == null)
-        {
-            return NotFound();
-        }
-
-        if (!eventPatch.EventName.IsNullOrEmpty())
-            eventEntity.EventName = eventPatch.EventName;
-        if (!eventPatch.Description.IsNullOrEmpty())
-            eventEntity.Description = eventPatch.Description;
-
-        _eventRepo.Update(eventEntity);
-        return Ok(_mapper.Map<EventDTO>(eventEntity));
+        return Ok(modifiedEvent);
     }
 
     [HttpDelete]
     public async Task<ActionResult> Delete(int id)
     {
-        var eventEntity = await _eventRepo.GetByID(id);
+        _eventService.Delete(id);
         
-        if (eventEntity == null)
-        {
-            return NotFound();
-        }
-        
-        _eventRepo.Delete(eventEntity);
         return Ok();
     }
 }

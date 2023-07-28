@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using WebApplication1.Exceptions;
 using WebApplication1.Models;
 using WebApplication1.Models.DTO;
+using WebApplication1.Services.Interface;
 
 namespace WebApplication1.Repository;
 
@@ -22,10 +23,14 @@ public class EventRepo : IEventRepo
 
     public async Task<Event> GetByID(int id)
     {
-        var @event = await _dbContext.Events.Where(e => e.EventId == id).FirstOrDefaultAsync();
+        Console.WriteLine(id);
+        var @event = await _dbContext.Events.Where(e => e.EventId == id).Include(e => e.Venue).Include(e => e.EventType).FirstOrDefaultAsync();
 
         if (@event == null)
+        {
+            Console.WriteLine("null");
             throw new EntityNotFoundException(id, nameof(Event));
+        }
         
         return @event;
     }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Models;
 using WebApplication1.Models.DTO;
 using WebApplication1.Repository;
+using WebApplication1.Services.Interface;
 
 namespace WebApplication1.Controllers;
 
@@ -10,61 +11,45 @@ namespace WebApplication1.Controllers;
 [ApiController]
 public class OrderController : ControllerBase
 {
-    private readonly IOrderRepo _orderRepo;
-    private readonly IMapper _mapper;
-    private readonly ITicketCategoryRepo _ticketCategoryRepo;
+    private readonly OrderService _orderService;
+    private readonly ILogger<OrderController> _logger;
 
-    public OrderController(IOrderRepo orderRepo, ITicketCategoryRepo ticketCategoryRepo, IMapper mapper)
+    public OrderController(OrderService orderService, ILogger<OrderController> logger)
     {
-        _orderRepo = orderRepo;
-        _ticketCategoryRepo = ticketCategoryRepo;
-        _mapper = mapper;
+        _orderService = orderService;
+        _logger = logger;
     }
     
     [HttpGet]
     public async Task<ActionResult<List<OrderDTO>>> GetAll()
     {
-        var orders = await _orderRepo.GetAll();
-        
-        var ordersDTO = _mapper.Map<List<OrderDTO>>(orders);
-        
+        List<OrderDTO> ordersDTO = await _orderService.GetAll();
+
         return Ok(ordersDTO);
     }
     
     [HttpGet]
     public async Task<ActionResult<OrderDTO>> GetById(int id)
     {
-        var order = await _orderRepo.GetByID(id);
+        OrderDTO order = await _orderService.GetById(id);
         
-        return Ok(_mapper.Map<OrderDTO>(order));
+        return Ok(order);
     }
     
     [HttpPatch]
     public async Task<ActionResult<OrderDTO>> Patch(OrderPatchDTO orderPatch)
     {
-        var order = await _orderRepo.GetByID(orderPatch.OrderId);
-        
-        var ticketCategory = await _ticketCategoryRepo.GetByDescriptionAndEventId(orderPatch.Description, order.TicketCategory.Event.EventId);
-        
-        order.TicketCategory = ticketCategory;
-        order.NumberOfTickets = orderPatch.NumberOfTickets;
-        order.TotalPrice = orderPatch.NumberOfTickets * ticketCategory.Price;
-
-        _orderRepo.Update(order);
-        return Ok(_mapper.Map<OrderDTO>(order));
+        Console.WriteLine("patch");
+        OrderDTO modifiedOrder = await _orderService.Update(orderPatch);
+        Console.WriteLine("patchOK");
+        return Ok(modifiedOrder);
     }
     
     [HttpDelete]
     public async Task<ActionResult> Delete(int id)
     {
-        var order = await _orderRepo.GetByID(id);
+        await _orderService.Delete(id);
         
-        if (order == null)
-        {
-            return NotFound();
-        }
-        
-        _orderRepo.Delete(order);
-        return NoContent();
+        return Ok();
     }
 }
